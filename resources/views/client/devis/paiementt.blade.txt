@@ -1,0 +1,132 @@
+@extends('client.layouts.app')
+
+@section('contents')
+
+<div class="container-fluid">
+    <div class="row">
+    <div class="col-lg-8"> 
+    <div class="d-flex align-items-center justify-content-between">
+        <h1 class="mb-0">Suivi de paiement du devis {{ $paiement->devis->ref }}</h1>
+    </div>
+    <hr />
+    @if(Session::has('success'))
+        <div class="alert alert-success" role="alert">
+            {{ Session::get('success') }}
+        </div>
+    @endif
+    <table class="table table-hover" >
+        <thead class="table-primary">
+            <tr>
+                <th>Total à payer</th>
+                <th>Paiement effectué</th>
+                <th>Reste à payer</th>
+                <th>%</th>
+            </tr>
+        </thead>
+        <tbody >
+            @if($paiement->count() > 0)
+                    <tr>
+                        <td class="align-middle">{{ number_format($paiement->final,2, ',',' ') }}</td>  
+                        <td class="align-middle">{{ number_format($paiement->paiementEffectue,2, ',',' ') }}</td>  
+                        <td class="align-middle" id="montant-restant"><b>{{ number_format($paiement->reste,2, ',',' ') }} </b></td>  
+                        <td class="align-middle">{{ number_format($paiement->pourcentage,2, ',',' ') }} %</td>  
+                    </tr>
+            @else
+                <tr>
+                    <td class="text-center" colspan="5">Aucun paiement effectué</td>
+                </tr>
+            @endif
+        </tbody>
+    </table>
+    <hr><br><br>    
+    <h3 class="mb-0">Liste des paiements effectués</h3>
+    <table class="table table-hover">
+        <thead class="table-primary">
+            <tr>
+                <th>#</th>
+                <th>Date (paiement)</th>
+                <th>Montant (Ar)</th>
+            </tr>
+        </thead>
+        <tbody>+
+            @if($listPaiement->count() > 0)
+                @foreach($listPaiement as $lp)
+                    <tr>
+                        <td class="align-middle">{{ $lp->ref }}</td>
+                        <td class="align-middle">{{ \Carbon\Carbon::parse($lp->date)->format('d-m-Y H:i') }}</td>
+                        <td class="align-middle" style="text-align: right">{{ number_format($lp->montant,2, ',',' ') }}</td>  
+                        
+                    </tr>
+                @endforeach
+            @else
+                <tr>
+                    <td class="text-center" colspan="5">Aucun paiement</td>
+                </tr>
+            @endif
+        </tbody>
+    </table>
+    </div>
+    <div  class="col-lg-1"></div>
+    <div class="col-lg-3"> 
+        <form id="form-paiement" action="{{ route('paiement.store') }}" method="POST">
+            @csrf
+            <h3 class="mb-0">Nouveau paiement</h3>
+            <br>
+            <input type="hidden" name="devis_id" value="{{ $paiement->devis_id }}">
+            <div class="form-group font-weight-bold text-gray-800">
+                <label for="date_debut" >Date de paiement</label>
+                <input type="datetime-local" id="date_debut" name="datepaiement" class="form-control" required>
+            </div>
+            <div class="form-group font-weight-bold text-gray-800">
+                <label >Montant (Ar)</label>
+                <input type="number" name="montant" id="montant" class="form-control" >
+            </div>
+            <button type="submit" class="btn btn-primary">Soumettre</button>
+        </form>
+        <div id="error-messages"></div>
+    </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelector('#form-paiement').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Récupération du montant restant à payer
+            var montantRestant = parseFloat(document.getElementById('montant-restant').innerText.replace(/[^0-9.-]+/g,""));
+
+            // Récupération du montant saisi dans le formulaire
+            var montantPaiement = parseFloat(document.getElementById('montant').value);
+
+            // Vérification si le montant du paiement est supérieur au montant restant
+            if (montantPaiement > montantRestant) {
+                alert('Le montant du paiement ne peut pas dépasser le montant restant à payer.');
+                return;
+            }
+
+            // Envoi de la requête AJAX
+            axios.post('/paiement/store', new FormData(this))
+                .then(function (response) {
+                    if (response.data.status === 'success') {
+                        alert(response.data.message);
+                    }
+                })
+                .catch(function (error) {
+                    if (error.response.status === 422) {
+                        // Afficher les messages d'erreur
+                        var errorHtml = '';
+                        Object.values(error.response.data.errors).forEach(function (value) {
+                            errorHtml += value ;
+                        });
+                        document.querySelector('#error-messages').innerHTML = errorHtml;
+                        document.querySelector('#error-messages').style.display = 'block';
+                    }
+                });
+        });
+    });
+</script>
+
+
+@endsection
