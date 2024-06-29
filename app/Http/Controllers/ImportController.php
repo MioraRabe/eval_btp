@@ -78,11 +78,11 @@ if ($request->hasFile('devis')) {
     
             $lieu = Lieu::firstOrCreate(['nom' => $row[7]]);
     
-            $typeFinition = TypeFinition::firstOrCreate(['nom' => $row[3]], ['augmentation' => (float) str_replace(',', '.', $row[4])]);
+            $typeFinition = Typefinition::firstOrCreate(['nom' => $row[3]], ['augmentation' => (float) str_replace(',', '.', $row[4])]);
     
-            $typeMaison = TypeMaison::where('nom', $row[2])->first();
+            $typeMaison = Typemaison::where('nom', $row[2])->first();
             if (!$typeMaison) {
-                $typeMaison = TypeMaison::firstOrCreate([
+                $typeMaison = Typemaison::firstOrCreate([
                     'nom' => $row[2],
                 ]);
             }
