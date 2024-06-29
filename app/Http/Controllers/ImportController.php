@@ -13,7 +13,7 @@ use App\Models\Devis;
 use App\Models\Devisdetails;
 use App\Models\Client;
 use App\Models\Lieu;
-use App\Models\TypeFinition;
+use App\Models\Typefinition;
 use App\Models\Paiement;
 
 use Carbon\Carbon;
@@ -41,7 +41,7 @@ if ($request->hasFile('maisontravaux')) {
             var_dump($row);
             $unite = Unite::firstOrCreate(['nom' => $row[5]]);
     
-            $typemaison = TypeMaison::firstOrCreate([
+            $typemaison = Typemaison::firstOrCreate([
                 'nom' => $row[0],
                 'description' => $row[1],
                 'duree' => (float) str_replace(',', '.', $row[8]),
@@ -152,61 +152,5 @@ if ($request->hasFile('devis')) {
         return redirect()->back()->with('success', 'Fichier CSV importé avec succès.');
     }
 
-    // public function store(Request $request)
-    // {
-    //     $file = $request->file('file');
-    //     $handle = fopen($file->getPathname(), 'r');
-
-    //     // Ignorer la première ligne (en-têtes)
-    //     fgetcsv($handle);
-
-    //     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
-    //         // Vérifiez si la date est manquante ou mal formatée
-    //         if (empty($data[4]) || !preg_match('/^\d{2}\/\d{2}\/\d{4}$/', $data[4])) {
-    //             // Ignorer la ligne si la date est manquante ou mal formatée
-    //             continue;
-    //         }
-
-            
-    //         try {
-    //             // Tentative de création de la date avec le format spécifié
-    //             $date = Carbon::createFromFormat('d/m/Y', $data[4])->format('Y-m-d');
-    //         } catch (\Exception $e) {
-    //             // Gérer l'erreur, par exemple en enregistrant une erreur ou en continuant avec la prochaine ligne
-    //             continue;
-    //         }
-            
-    //         Import::create([
-    //             'NumSeance' => $data[0],
-    //             'Film' => $data[1],
-    //             'Categorie' => $data[2],
-    //             'Salle' => $data[3],
-    //             'Date' => $date,
-    //             'Heure' => $data[5],
-    //         ]);
-
-    //         // Création ou récupération de la catégorie
-    //         $categorie = Categorie::firstOrCreate(['nom' => $data[2]]);
-
-    //         // Création ou récupération du film avec la catégorie
-    //         $film = Film::firstOrCreate(['nom' => $data[1], 'categorie_id' => $categorie->id]);
-
-    //         // Création ou récupération de la salle
-    //         $salle = Salle::firstOrCreate(['nom' => $data[3]]);
-
-
-    //         // Insérer la séance avec le film et la salle
-    //         Seance::create([
-    //             'numSeance' => $data[0],
-    //             'film_id' => $film->id,
-    //             'salle_id' => $salle->id,
-    //             'date' => $date,
-    //             'heure' => $data[5],
-    //         ]);
-    //     }
-
-    //     fclose($handle);
-
-    //     return redirect()->back()->with('success', 'Fichier CSV importé avec succès.');
-    // }
+   
 }
