@@ -59,7 +59,7 @@
     <!-- END nav -->
 
     <section class="home-slider owl-carousel">
-      <div class="slider-item" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/btp_1.jpg);">
+      <div class="slider-item" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/btp21.jpg);">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
@@ -75,7 +75,7 @@
         </div>
       </div>
 
-      <div class="slider-item" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/btp_2.jpg);">
+      <div class="slider-item" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/btp3.jpg);">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
@@ -91,7 +91,7 @@
         </div>
       </div>
 
-      <div class="slider-item" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/btp_3.jpg);">
+      <div class="slider-item" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/btp2.jpg);">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
