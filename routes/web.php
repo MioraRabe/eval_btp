@@ -16,7 +16,8 @@ use App\Http\Controllers\FrontOfficeController;
 // });
 Route::get('/client', function () {
     return view('client/login');
-});
+})->name('client.login');
+
 Route::get('/admin', function () {
     return view('auth/login');
 });

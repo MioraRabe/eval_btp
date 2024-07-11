@@ -59,7 +59,7 @@
     <!-- END nav -->
 
     <section class="home-slider owl-carousel">
-      <div class="slider-item" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/btp21.jpg);">
+      <div class="slider-item" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/btp1.jpg);">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
@@ -68,7 +68,7 @@
             	<span class="subheading">Bienvenue</span>
               <h1 class="mb-4">Gérez vos projets de construction avec simplicité et efficacité</h1>
               <p class="mb-4 mb-md-5">Optimisez chaque aspect de votre chantier grâce à notre application intuitive</p>
-              <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Faire un devis</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Voir les types de maisons</a></p>
+              <p><a href="{{ route('client.login') }}" class="btn btn-primary p-3 px-xl-4 py-xl-3">Faire un devis</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Voir les types de maisons</a></p>
             </div>
 
           </div>
@@ -84,7 +84,7 @@
             	<span class="subheading">Bienvenue</span>
               <h1 class="mb-4">Personnalisez votre projet de A à Z</h1>
               <p class="mb-4 mb-md-5">Choisissez parmi nos différentes options de maisons et de finitions.</p>
-              <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Faire un devis</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Voir les types de maisons</a></p>
+              <p><a href="{{ route('client.login') }}" class="btn btn-primary p-3 px-xl-4 py-xl-3">Faire un devis</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Voir les types de maisons</a></p>
             </div>
 
           </div>
@@ -100,7 +100,7 @@
             	<span class="subheading">Bienvenue</span>
               <h1 class="mb-4">Sécurisez vos transactions financières en toute simplicité</h1>
               <p class="mb-4 mb-md-5">Effectuez vos paiements directement depuis notre application.</p>
-              <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Faire un devis</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Voir les types de maisons</a></p>
+              <p><a href="{{ route('client.login') }}" class="btn btn-primary p-3 px-xl-4 py-xl-3">Faire un devis</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Voir les types de maisons</a></p>
             </div>
 
           </div>
