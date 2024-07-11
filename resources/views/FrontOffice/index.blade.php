@@ -38,7 +38,7 @@
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item active"><a href="#" class="nav-link">Accueil</a></li>
-	          <li class="nav-item"><a href="#" class="nav-link">Maisons</a></li>
+	          <li class="nav-item"><a href="#ftco-menu" class="nav-link">Maisons</a></li>
 	          <li class="nav-item"><a href="/client" class="nav-link">Devis</a></li>
 	          {{-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
@@ -64,10 +64,9 @@
           <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 
             <div class="col-md-8 col-sm-12 text-center ftco-animate">
-            	<span class="subheading">Bienvenue</span>
               <h1 class="mb-4">Gérez vos projets de construction avec simplicité et efficacité</h1>
               <p class="mb-4 mb-md-5">Optimisez chaque aspect de votre chantier grâce à notre application intuitive</p>
-              <p><a href="/client" class="btn btn-primary p-3 px-xl-4 py-xl-3">Faire un devis</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Voir les types de maisons</a></p>
+              <p><a href="/client" class="btn btn-primary p-3 px-xl-4 py-xl-3">Faire un devis</a> <a href="#ftco-menu" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Voir les types de maisons</a></p>
             </div>
 
           </div>
@@ -80,10 +79,9 @@
           <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 
             <div class="col-md-8 col-sm-12 text-center ftco-animate">
-            	<span class="subheading">Bienvenue</span>
               <h1 class="mb-4">Personnalisez votre projet de A à Z</h1>
               <p class="mb-4 mb-md-5">Choisissez parmi nos différentes options de maisons et de finitions.</p>
-              <p><a href="/client" class="btn btn-primary p-3 px-xl-4 py-xl-3">Faire un devis</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Voir les types de maisons</a></p>
+              <p><a href="/client" class="btn btn-primary p-3 px-xl-4 py-xl-3">Faire un devis</a> <a href="#ftco-menu" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Voir les types de maisons</a></p>
             </div>
 
           </div>
@@ -96,10 +94,9 @@
           <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 
             <div class="col-md-8 col-sm-12 text-center ftco-animate">
-            	<span class="subheading">Bienvenue</span>
               <h1 class="mb-4">Sécurisez vos transactions financières en toute simplicité</h1>
               <p class="mb-4 mb-md-5">Effectuez vos paiements directement depuis notre application.</p>
-              <p><a href="/client" class="btn btn-primary p-3 px-xl-4 py-xl-3">Faire un devis</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Voir les types de maisons</a></p>
+              <p><a href="/client" class="btn btn-primary p-3 px-xl-4 py-xl-3">Faire un devis</a> <a href="#ftco-menu" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Voir les types de maisons</a></p>
             </div>
 
           </div>
@@ -176,113 +173,13 @@
     </section>
 
     
-
-    <section class="ftco-section ftco-services">
-    	<div class="container">
-    		<div class="row">
-          <div class="col-md-4 ftco-animate">
-            <div class="media d-block text-center block-6 services">
-              <div class="icon d-flex justify-content-center align-items-center mb-5">
-              	<span class="flaticon-choices"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading">Easy to Order</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="media d-block text-center block-6 services">
-              <div class="icon d-flex justify-content-center align-items-center mb-5">
-              	<span class="flaticon-delivery-truck"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading">Fastest Delivery</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="media d-block text-center block-6 services">
-              <div class="icon d-flex justify-content-center align-items-center mb-5">
-              	<span class="flaticon-coffee-bean"></span></div>
-              <div class="media-body">
-                <h3 class="heading">Quality Coffee</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-    	</div>
-    </section>
-
-    
-
-    <section class="ftco-section">
-    	<div class="container">
-    		<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section ftco-animate text-center">
-          	<span class="subheading">Discover</span>
-            <h2 class="mb-4">Best Coffee Sellers</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          </div>
-        </div>
-        <div class="row">
-        	<div class="col-md-3">
-        		<div class="menu-entry">
-    					<a href="#" class="img" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/menu-1.jpg);"></a>
-    					<div class="text text-center pt-4">
-    						<h3><a href="#">Coffee Capuccino</a></h3>
-    						<p>A small river named Duden flows by their place and supplies</p>
-    						<p class="price"><span>$5.90</span></p>
-    						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
-    					</div>
-    				</div>
-        	</div>
-        	<div class="col-md-3">
-        		<div class="menu-entry">
-    					<a href="#" class="img" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/menu-2.jpg);"></a>
-    					<div class="text text-center pt-4">
-    						<h3><a href="#">Coffee Capuccino</a></h3>
-    						<p>A small river named Duden flows by their place and supplies</p>
-    						<p class="price"><span>$5.90</span></p>
-    						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
-    					</div>
-    				</div>
-        	</div>
-        	<div class="col-md-3">
-        		<div class="menu-entry">
-    					<a href="#" class="img" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/menu-3.jpg);"></a>
-    					<div class="text text-center pt-4">
-    						<h3><a href="#">Coffee Capuccino</a></h3>
-    						<p>A small river named Duden flows by their place and supplies</p>
-    						<p class="price"><span>$5.90</span></p>
-    						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
-    					</div>
-    				</div>
-        	</div>
-        	<div class="col-md-3">
-        		<div class="menu-entry">
-    					<a href="#" class="img" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/menu-4.jpg);"></a>
-    					<div class="text text-center pt-4">
-    						<h3><a href="#">Coffee Capuccino</a></h3>
-    						<p>A small river named Duden flows by their place and supplies</p>
-    						<p class="price"><span>$5.90</span></p>
-    						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
-    					</div>
-    				</div>
-        	</div>
-        </div>
-    	</div>
-    </section>
-
 		<section class="ftco-menu">
     	<div class="container">
     		<div class="row justify-content-center mb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
-          	<span class="subheading">Discover</span>
-            <h2 class="mb-4">Our Products</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          	{{-- <span class="subheading">Discover</span> --}}
+            <h2 class="mb-4">Les types de maisons</h2>
+            <p>Explorez notre gamme diversifiée de maisons, de l'élégance standard aux finitions premium. Chaque type de maison est accompagné d'une durée de construction préétablie.</p>
           </div>
         </div>
     		<div class="row d-md-flex">
@@ -303,6 +200,24 @@
 
 		              <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
 		              	<div class="row">
+							@foreach ($typemaisons as $typemaison)
+
+							<div class="col-md-4 text-center">
+								<div class="menu-wrap">
+									<a href="#" class="menu-img img mb-4" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/dish-1.jpg);"></a>
+									<div class="text">
+										<h3><a href="#">{{ $typemaison->nom }}</a></h3>
+										<p>{{ $typemaison->description }}</p>
+										<p class="price">
+											<div class="icon"><span class="ion-md-calendar"></span></div>
+											<span>{{ $typemaison->duree }} j</span></p>
+										<p><a href="/client" class="btn btn-primary btn-outline-primary">Faire un devis</a></p>
+									</div>
+								</div>
+							</div>
+
+							@endforeach
+
 		              		<div class="col-md-4 text-center">
 		              			<div class="menu-wrap">
 		              				<a href="#" class="menu-img img mb-4" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/dish-1.jpg);"></a>
@@ -423,6 +338,69 @@
     </section>
 
 
+    <section class="ftco-section ftco-services">
+    	<div class="container">
+			<div class="row justify-content-center mb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+				  <h2 class="mb-4">Les finitions</h2>
+				  <p>Que vous optiez pour le confort standard ou le luxe VIP, notre application vous offre la flexibilité de personnaliser chaque aspect de votre projet.</p>
+				</div>
+			  </div>
+    		<div class="row">
+
+				@foreach ($typefinitions as $typefinition)
+
+					<div class="col-md-4 ftco-animate">
+						<div class="media d-block text-center block-6 services">
+						<div class="icon d-flex justify-content-center align-items-center mb-5">
+							{{-- <span class="flaticon-choices"></span> --}}
+							<p>+ {{ $typefinition->augmentation }} %</p>
+
+						</div>
+						<div class="media-body">
+							<h3 class="heading">{{ $typefinition->nom }}</h3>
+							<p>+ {{ $typefinition->augmentation }} %</p>
+						</div>
+						</div>
+					</div>
+				@endforeach
+
+          <div class="col-md-4 ftco-animate">
+            <div class="media d-block text-center block-6 services">
+              <div class="icon d-flex justify-content-center align-items-center mb-5">
+              	<span class="flaticon-choices"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Easy to Order</h3>
+                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="media d-block text-center block-6 services">
+              <div class="icon d-flex justify-content-center align-items-center mb-5">
+              	<span class="flaticon-delivery-truck"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Fastest Delivery</h3>
+                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="media d-block text-center block-6 services">
+              <div class="icon d-flex justify-content-center align-items-center mb-5">
+              	<span class="flaticon-coffee-bean"></span></div>
+              <div class="media-body">
+                <h3 class="heading">Quality Coffee</h3>
+                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    	</div>
+    </section>
+
     <footer class="ftco-footer ftco-section img">
     	<div class="overlay"></div>
       <div class="container">
@@ -445,9 +423,9 @@
              <div class="ftco-footer-widget mb-4 ml-md-4">
               <h2 class="ftco-heading-2">Services</h2>
               <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">Planification</a></li>
-                <li><a href="#" class="py-2 d-block">Devis</a></li>
-                <li><a href="#" class="py-2 d-block">Réalisation</a></li>
+                <li class="py-2 d-block">Planification</li>
+                <li class="py-2 d-block">Devis</li>
+                <li class="py-2 d-block">Réalisation</li>
               </ul>
             </div>
           </div>
@@ -458,7 +436,7 @@
 	              <ul>
 	                <li><span class="icon icon-map-marker"></span><span class="text">198 Mahabo Andoharanofotsy</span></li>
 	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+261 45 678 90</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">homerenovation@gmail.com</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">homereno@gmail.com</span></a></li>
 	              </ul>
 	            </div>
             </div>
