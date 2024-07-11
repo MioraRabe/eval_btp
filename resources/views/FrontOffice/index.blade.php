@@ -204,13 +204,13 @@
 
 							<div class="col-md-4 text-center">
 								<div class="menu-wrap">
-									<a href="#" class="menu-img img mb-4" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/dish-1.jpg);"></a>
+									<a href="#" class="menu-img img mb-4" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/btp3.jpg);"></a>
 									<div class="text">
 										<h3><a href="#">{{ $typemaison->nom }}</a></h3>
 										<p>{{ $typemaison->description }}</p>
 										<p class="price">
-											<div class="icon"><span class="ion-md-calendar"></span></div>
-											<span>{{ $typemaison->duree }} j</span></p>
+											<span class="ion-md-calendar icon"></span>
+											<span>{{ $typemaison->duree }} jours</span></p>
 										<p><a href="/client" class="btn btn-primary btn-outline-primary">Faire un devis</a></p>
 									</div>
 								</div>
@@ -218,117 +218,10 @@
 
 							@endforeach
 
-		              		<div class="col-md-4 text-center">
-		              			<div class="menu-wrap">
-		              				<a href="#" class="menu-img img mb-4" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/dish-1.jpg);"></a>
-		              				<div class="text">
-		              					<h3><a href="#">Grilled Beef</a></h3>
-		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
-		              				</div>
-		              			</div>
-		              		</div>
-		              		<div class="col-md-4 text-center">
-		              			<div class="menu-wrap">
-		              				<a href="#" class="menu-img img mb-4" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/dish-2.jpg);"></a>
-		              				<div class="text">
-		              					<h3><a href="#">Grilled Beef</a></h3>
-		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
-		              				</div>
-		              			</div>
-		              		</div>
-		              		<div class="col-md-4 text-center">
-		              			<div class="menu-wrap">
-		              				<a href="#" class="menu-img img mb-4" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/dish-3.jpg);"></a>
-		              				<div class="text">
-		              					<h3><a href="#">Grilled Beef</a></h3>
-		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
-		              				</div>
-		              			</div>
-		              		</div>
+		              		
 		              	</div>
 		              </div>
 
-		              {{-- <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
-		                <div class="row">
-		              		<div class="col-md-4 text-center">
-		              			<div class="menu-wrap">
-		              				<a href="#" class="menu-img img mb-4" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/drink-1.jpg);"></a>
-		              				<div class="text">
-		              					<h3><a href="#">Lemonade Juice</a></h3>
-		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
-		              				</div>
-		              			</div>
-		              		</div>
-		              		<div class="col-md-4 text-center">
-		              			<div class="menu-wrap">
-		              				<a href="#" class="menu-img img mb-4" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/drink-2.jpg);"></a>
-		              				<div class="text">
-		              					<h3><a href="#">Pineapple Juice</a></h3>
-		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
-		              				</div>
-		              			</div>
-		              		</div>
-		              		<div class="col-md-4 text-center">
-		              			<div class="menu-wrap">
-		              				<a href="#" class="menu-img img mb-4" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/drink-3.jpg);"></a>
-		              				<div class="text">
-		              					<h3><a href="#">Soda Drinks</a></h3>
-		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
-		              				</div>
-		              			</div>
-		              		</div>
-		              	</div>
-		              </div> --}}
-
-		              {{-- <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
-		                <div class="row">
-		              		<div class="col-md-4 text-center">
-		              			<div class="menu-wrap">
-		              				<a href="#" class="menu-img img mb-4" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/dessert-1.jpg);"></a>
-		              				<div class="text">
-		              					<h3><a href="#">Hot Cake Honey</a></h3>
-		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
-		              				</div>
-		              			</div>
-		              		</div>
-		              		<div class="col-md-4 text-center">
-		              			<div class="menu-wrap">
-		              				<a href="#" class="menu-img img mb-4" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/dessert-2.jpg);"></a>
-		              				<div class="text">
-		              					<h3><a href="#">Hot Cake Honey</a></h3>
-		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
-		              				</div>
-		              			</div>
-		              		</div>
-		              		<div class="col-md-4 text-center">
-		              			<div class="menu-wrap">
-		              				<a href="#" class="menu-img img mb-4" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/dessert-3.jpg);"></a>
-		              				<div class="text">
-		              					<h3><a href="#">Hot Cake Honey</a></h3>
-		              					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-		              					<p class="price"><span>$2.90</span></p>
-		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Add to cart</a></p>
-		              				</div>
-		              			</div>
-		              		</div>
-		              	</div>
-		              </div> --}}
 		            </div>
 		          </div>
 		        </div>
@@ -350,7 +243,7 @@
 
 				@foreach ($typefinitions as $typefinition)
 
-					<div class="col-md-4 ftco-animate">
+					<div class="col-md-3 ftco-animate">
 						<div class="media d-block text-center block-6 services">
 						<div class="icon d-flex justify-content-center align-items-center mb-5">
 							{{-- <span class="flaticon-choices"></span> --}}
@@ -365,38 +258,6 @@
 					</div>
 				@endforeach
 
-          <div class="col-md-4 ftco-animate">
-            <div class="media d-block text-center block-6 services">
-              <div class="icon d-flex justify-content-center align-items-center mb-5">
-              	<span class="flaticon-choices"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading">Easy to Order</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="media d-block text-center block-6 services">
-              <div class="icon d-flex justify-content-center align-items-center mb-5">
-              	<span class="flaticon-delivery-truck"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading">Fastest Delivery</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="media d-block text-center block-6 services">
-              <div class="icon d-flex justify-content-center align-items-center mb-5">
-              	<span class="flaticon-coffee-bean"></span></div>
-              <div class="media-body">
-                <h3 class="heading">Quality Coffee</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>
-          </div>
         </div>
     	</div>
     </section>

@@ -112,11 +112,15 @@ Route::controller(TypefinitionController::class)->prefix('typefinitions')->group
 });
 
 
-Route::controller(FrontOfficeController::class)->group(function () {
+// Route::controller(FrontOfficeController::class)->group(function () {
 
-    Route::get('', 'accueil')->name('Accueil.office');
+//     Route::get('', 'accueil')->name('Accueil.office');
 
-});
+// });
+
+Route::get('/', [FrontOfficeController::class, 'accueil'])->name('Accueil.office');
+
+
 // Route::prefix('typefinitions')->group(function () {
 //     Route::get('', 'TypefinitionController@index')->name('typefinitions.index');
 //     Route::get('show/{id}', 'TypefinitionController@show')->name('typefinitions.show');
