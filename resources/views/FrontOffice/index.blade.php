@@ -252,7 +252,6 @@
 						</div>
 						<div class="media-body">
 							<h3 class="heading">{{ $typefinition->nom }}</h3>
-							<p>+ {{ $typefinition->augmentation }} %</p>
 						</div>
 						</div>
 					</div>
