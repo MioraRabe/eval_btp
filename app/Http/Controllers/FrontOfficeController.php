@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Typemaison;
+use App\Models\Typefinition;
 
 class FrontOfficeController extends Controller{
 
