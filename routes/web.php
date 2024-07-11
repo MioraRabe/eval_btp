@@ -11,10 +11,12 @@ use App\Http\Controllers\TravauxController;
 use App\Http\Controllers\TypefinitionController;
 use App\Http\Controllers\FrontOfficeController;
 
-Route::get('/', function () {
+// Route::get('/', function () {
+//     return view('client/login');
+// });
+Route::get('/client', function () {
     return view('client/login');
 });
-
 Route::get('/admin', function () {
     return view('auth/login');
 });
@@ -111,7 +113,7 @@ Route::controller(TypefinitionController::class)->prefix('typefinitions')->group
 
 Route::controller(FrontOfficeController::class)->group(function () {
 
-    Route::get('accueil', 'accueil')->name('Accueil.office');
+    Route::get('', 'accueil')->name('Accueil.office');
 
 });
 // Route::prefix('typefinitions')->group(function () {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Coffee - Free Bootstrap 4 Template by Colorlib</title>
+    <title>Home Renovation</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -31,18 +31,17 @@
   <body>
   	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Coffee<small>Blend</small></a>
+	      <a class="navbar-brand" href="">Home<small>Renovation</small></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
-	          <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
-	          <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-	          <li class="nav-item dropdown">
+	          <li class="nav-item"><a href="#" class="nav-link">Maisons</a></li>
+	          <li class="nav-item"><a href="#" class="nav-link">Travaux</a></li>
+	          <li class="nav-item"><a href="#" class="nav-link">Devis</a></li>
+	          {{-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
               	<a class="dropdown-item" href="#">Shop</a>
@@ -50,9 +49,9 @@
                 <a class="dropdown-item" href="#">Cart</a>
                 <a class="dropdown-item" href="#">Checkout</a>
               </div>
-            </li>
+            </li> --}}
 	          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-	          <li class="nav-item cart"><a href="#" class="nav-link"><span class="icon icon-shopping_cart"></span><span class="bag d-flex justify-content-center align-items-center"><small>1</small></span></a></li>
+	          {{-- <li class="nav-item cart"><a href="#" class="nav-link"><span class="icon icon-shopping_cart"></span><span class="bag d-flex justify-content-center align-items-center"><small>1</small></span></a></li> --}}
 	        </ul>
 	      </div>
 		  </div>
@@ -60,48 +59,48 @@
     <!-- END nav -->
 
     <section class="home-slider owl-carousel">
-      <div class="slider-item" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/bg_1.jpg);">
+      <div class="slider-item" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/btp_1.jpg);">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 
             <div class="col-md-8 col-sm-12 text-center ftco-animate">
-            	<span class="subheading">Welcome</span>
-              <h1 class="mb-4">The Best Coffee Testing Experience</h1>
-              <p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
+            	<span class="subheading">Bienvenue</span>
+              <h1 class="mb-4">Gérez vos projets de construction avec simplicité et efficacité</h1>
+              <p class="mb-4 mb-md-5">Optimisez chaque aspect de votre chantier grâce à notre application intuitive</p>
+              <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Faire un devis</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Voir les types de maisons</a></p>
             </div>
 
           </div>
         </div>
       </div>
 
-      <div class="slider-item" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/bg_2.jpg);">
+      <div class="slider-item" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/btp_2.jpg);">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 
             <div class="col-md-8 col-sm-12 text-center ftco-animate">
-            	<span class="subheading">Welcome</span>
-              <h1 class="mb-4">Amazing Taste &amp; Beautiful Place</h1>
-              <p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
+            	<span class="subheading">Bienvenue</span>
+              <h1 class="mb-4">Personnalisez votre projet de A à Z</h1>
+              <p class="mb-4 mb-md-5">Choisissez parmi nos différentes options de maisons et de finitions.</p>
+              <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Faire un devis</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Voir les types de maisons</a></p>
             </div>
 
           </div>
         </div>
       </div>
 
-      <div class="slider-item" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/bg_3.jpg);">
+      <div class="slider-item" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/btp_3.jpg);">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 
             <div class="col-md-8 col-sm-12 text-center ftco-animate">
-            	<span class="subheading">Welcome</span>
-              <h1 class="mb-4">Creamy Hot and Ready to Serve</h1>
-              <p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
+            	<span class="subheading">Bienvenue</span>
+              <h1 class="mb-4">Sécurisez vos transactions financières en toute simplicité</h1>
+              <p class="mb-4 mb-md-5">Effectuez vos paiements directement depuis notre application.</p>
+              <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Faire un devis</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Voir les types de maisons</a></p>
             </div>
 
           </div>
