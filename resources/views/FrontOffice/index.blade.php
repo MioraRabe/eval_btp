@@ -212,7 +212,9 @@
 
 							<div class="col-md-4 text-center">
 								<div class="menu-wrap">
-									<a href="" class="menu-img img mb-4" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/btp3.jpg);"></a>
+									<a href="" class="menu-img img mb-4" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/house{{ $loop->iteration }}.jpg);"></a>
+
+									{{-- <a href="" class="menu-img img mb-4" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/btp3.jpg);"></a> --}}
 									<div class="text">
 										<h3><a href="">{{ $typemaison->nom }}  - {{ $loop->iteration }}</a></h3>
 										<p>{{ $typemaison->description }}</p>
