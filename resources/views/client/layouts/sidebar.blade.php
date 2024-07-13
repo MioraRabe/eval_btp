@@ -18,17 +18,6 @@
         <span>Mes devis</span></a>
     </li>
     
-    {{-- <li class="nav-item">
-      <a class="nav-link" href="{{ route('products') }}">
-        <i class="fas fa-fw fa-tachometer-alt"></i>
-        <span>Product</span></a>
-    </li> --}}
-    
-    {{-- <li class="nav-item">
-      <a class="nav-link" href="/profile">
-        <i class="fas fa-fw fa-tachometer-alt"></i>
-        <span>Profile</span></a>
-    </li> --}}
     
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
