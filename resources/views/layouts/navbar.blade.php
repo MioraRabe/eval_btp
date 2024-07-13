@@ -16,7 +16,6 @@
         </div> --}}
       </div>
     </form>
-    <a href="{{ route('truncate') }}" type="button" class="btn btn-primary">Réinitialiser bdd</a>
     
     <!-- Topbar Navbar -->
     <ul class="navbar-nav ml-auto">

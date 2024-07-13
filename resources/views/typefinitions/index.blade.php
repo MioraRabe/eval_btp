@@ -21,7 +21,7 @@
                 <tr>
                     <td>{{ $typeFinition->id }}</td>
                     <td>{{ $typeFinition->nom }}</td>
-                    <td>{{ $typeFinition->augmentation }}</td>
+                    <td style="text-align: right">{{ $typeFinition->augmentation }}</td>
                     <td>
                         <a href="{{ route('typefinitions.show', ['id' => $typeFinition->id]) }}" class="btn btn-primary">Voir</a>
                         <a href="{{ route('typefinitions.edit', ['id' => $typeFinition->id]) }}" class="btn btn-warning">Modifier</a>

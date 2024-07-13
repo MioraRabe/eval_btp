@@ -55,8 +55,8 @@ class AuthController extends Controller
   
         $request->session()->regenerate();
   
-        // return redirect()->route('dashboard');
-        return redirect()->route('import.import');
+        return redirect()->route('dashboards');
+        // return redirect()->route('import.import');
     }
 
     public function clientLoginAction(Request $request)

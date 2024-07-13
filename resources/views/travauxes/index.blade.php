@@ -25,9 +25,8 @@
                     <td>{{ $travail->code }}</td>
                     <td>{{ $travail->nom }}</td>
                     <td>{{ $travail->unite->nom }}</td>
-                    <td>{{ $travail->pu }}</td>
+                    <td style="text-align: right">{{ $travail->pu }}</td>
                     <td>
-                        {{-- <a href="{{ route('travauxes.show', $travail->id) }}" class="btn btn-info">Voir</a> --}}
                         <a href="{{ route('travauxes.edit', $travail->id) }}" class="btn btn-primary">Modifier</a>
                     </td>
                 </tr>

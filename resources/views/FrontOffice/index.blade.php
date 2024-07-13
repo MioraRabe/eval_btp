@@ -64,20 +64,9 @@
 	      </button>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="#" class="nav-link">Accueil</a></li>
-	          <li class="nav-item"><a href="#ftco-menu" class="nav-link">Maisons</a></li>
+	          <li class="nav-item active"><a href="" class="nav-link">Accueil</a></li>
 	          <li class="nav-item"><a href="/client" class="nav-link">Devis</a></li>
-	          {{-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown04">
-              	<a class="dropdown-item" href="#">Shop</a>
-                <a class="dropdown-item" href="#">Single Product</a>
-                <a class="dropdown-item" href="#">Cart</a>
-                <a class="dropdown-item" href="#">Checkout</a>
-              </div>
-            </li> --}}
-	          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-	          {{-- <li class="nav-item cart"><a href="#" class="nav-link"><span class="icon icon-shopping_cart"></span><span class="bag d-flex justify-content-center align-items-center"><small>1</small></span></a></li> --}}
+	          <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
 		  </div>
@@ -93,7 +82,7 @@
             <div class="col-md-8 col-sm-12 text-center ftco-animate">
               <h1 class="mb-4">Gérez vos projets de construction avec simplicité et efficacité</h1>
               <p class="mb-4 mb-md-5">Optimisez chaque aspect de votre chantier grâce à notre application intuitive</p>
-              <p><a href="/client" class="btn btn-primary p-3 px-xl-4 py-xl-3">Faire un devis</a> <a href="#ftco-menu" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Voir les types de maisons</a></p>
+              <p><a href="/client" class="btn btn-primary p-3 px-xl-4 py-xl-3">Faire un devis</a> </p>
             </div>
 
           </div>
@@ -108,7 +97,7 @@
             <div class="col-md-8 col-sm-12 text-center ftco-animate">
               <h1 class="mb-4">Personnalisez votre projet de A à Z</h1>
               <p class="mb-4 mb-md-5">Choisissez parmi nos différentes options de maisons et de finitions.</p>
-              <p><a href="/client" class="btn btn-primary p-3 px-xl-4 py-xl-3">Faire un devis</a> <a href="#ftco-menu" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Voir les types de maisons</a></p>
+              <p><a href="/client" class="btn btn-primary p-3 px-xl-4 py-xl-3">Faire un devis</a> </p>
             </div>
 
           </div>
@@ -123,7 +112,7 @@
             <div class="col-md-8 col-sm-12 text-center ftco-animate">
               <h1 class="mb-4">Sécurisez vos transactions financières en toute simplicité</h1>
               <p class="mb-4 mb-md-5">Effectuez vos paiements directement depuis notre application.</p>
-              <p><a href="/client" class="btn btn-primary p-3 px-xl-4 py-xl-3">Faire un devis</a> <a href="#ftco-menu" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Voir les types de maisons</a></p>
+              <p><a href="/client" class="btn btn-primary p-3 px-xl-4 py-xl-3">Faire un devis</a> </p>
             </div>
 
           </div>
@@ -212,15 +201,7 @@
     		<div class="row d-md-flex">
 	    		<div class="col-lg-12 ftco-animate p-md-5">
 		    		<div class="row">
-		          {{-- <div class="col-md-12 nav-link-wrap mb-5">
-		            <div class="nav ftco-animate nav-pills justify-content-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-		              <a class="nav-link active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Main Dish</a>
-
-		              <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Drinks</a>
-
-		              <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Desserts</a>
-		            </div>
-		          </div> --}}
+		          
 		          <div class="col-md-12 d-flex align-items-center">
 
 		            <div class="tab-content ftco-animate" id="v-pills-tabContent">
@@ -231,9 +212,9 @@
 
 							<div class="col-md-4 text-center">
 								<div class="menu-wrap">
-									<a href="#" class="menu-img img mb-4" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/btp3.jpg);"></a>
+									<a href="" class="menu-img img mb-4" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/house{{ $loop->iteration }}.jpg);"></a>
 									<div class="text">
-										<h3><a href="#">{{ $typemaison->nom }}</a></h3>
+										<h3><a href="">{{ $typemaison->nom }}</a></h3>
 										<p>{{ $typemaison->description }}</p>
 										<p class="price">
 											<span class="ion-md-calendar icon"></span>
@@ -273,7 +254,6 @@
 					<div class="col-md-3 ftco-animate">
 						<div class="media d-block text-center block-6 services">
 						<div class="icon d-flex justify-content-center align-items-center mb-5">
-							{{-- <span class="flaticon-choices"></span> --}}
 							<p>+ {{ $typefinition->augmentation }} %</p>
 
 						</div>
@@ -297,9 +277,9 @@
               <h2 class="ftco-heading-2">A propos</h2>
               <p>Superviser chaque détail technique et financier de vos constructions, depuis la planification jusqu'à la réalisation.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                <li class="ftco-animate"><a href=""><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href=""><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href=""><span class="icon-instagram"></span></a></li>
               </ul>
             </div>
           </div>
@@ -322,8 +302,8 @@
             	<div class="block-23 mb-3">
 	              <ul>
 	                <li><span class="icon icon-map-marker"></span><span class="text">198 Mahabo Andoharanofotsy</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+261 45 678 90</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">homereno@gmail.com</span></a></li>
+	                <li><a href=""><span class="icon icon-phone"></span><span class="text">+261 45 678 90</span></a></li>
+	                <li><a href=""><span class="icon icon-envelope"></span><span class="text">homereno@gmail.com</span></a></li>
 	              </ul>
 	            </div>
             </div>
@@ -334,8 +314,7 @@
 
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
   Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  {{-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> --}}
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+  
           </div>
         </div>
       </div>
