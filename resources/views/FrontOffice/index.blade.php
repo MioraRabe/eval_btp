@@ -62,10 +62,10 @@
 	      </button>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="#" class="nav-link">Accueil</a></li>
+	          <li class="nav-item active"><a href="" class="nav-link">Accueil</a></li>
 	          <li class="nav-item"><a href="/client" class="nav-link">Devis</a></li>
 	          
-	          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+	          <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
 	          {{-- <li class="nav-item cart"><a href="#" class="nav-link"><span class="icon icon-shopping_cart"></span><span class="bag d-flex justify-content-center align-items-center"><small>1</small></span></a></li> --}}
 	        </ul>
 	      </div>
@@ -148,7 +148,7 @@
 	    		</div>
 	    		<div class="book p-4">
 	    			<h3>Prendre rendez-vous</h3>
-	    			<form action="#" class="appointment-form">
+	    			<form action="" class="appointment-form">
 	    				<div class="d-md-flex">
 		    				<div class="form-group">
 		    					<input type="text" class="form-control" placeholder="Prénom">
@@ -212,9 +212,9 @@
 
 							<div class="col-md-4 text-center">
 								<div class="menu-wrap">
-									<a href="#" class="menu-img img mb-4" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/btp3.jpg);"></a>
+									<a href="" class="menu-img img mb-4" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/btp3.jpg);"></a>
 									<div class="text">
-										<h3><a href="#">{{ $typemaison->nom }}  - {{ $loop->iteration }}</a></h3>
+										<h3><a href="">{{ $typemaison->nom }}  - {{ $loop->iteration }}</a></h3>
 										<p>{{ $typemaison->description }}</p>
 										<p class="price">
 											<span class="ion-md-calendar icon"></span>
@@ -278,9 +278,9 @@
               <h2 class="ftco-heading-2">A propos</h2>
               <p>Superviser chaque détail technique et financier de vos constructions, depuis la planification jusqu'à la réalisation.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                <li class="ftco-animate"><a href=""><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href=""><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href=""><span class="icon-instagram"></span></a></li>
               </ul>
             </div>
           </div>
