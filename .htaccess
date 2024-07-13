@@ -1,0 +1,9 @@
+<IfModule mod_deflate.c>
+    # Activer la compression Gzip
+    AddOutputFilterByType DEFLATE text/plain text/html text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript
+
+    # Ne pas compresser les ressources déjà compressées
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+</IfModule>
