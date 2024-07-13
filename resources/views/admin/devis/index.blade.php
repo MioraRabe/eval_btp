@@ -35,13 +35,13 @@
                         <td class="align-middle">{{ \Carbon\Carbon::parse($dv->datecreation )->format('d-m-Y H:i') }}</td>
                         <td class="align-middle">{{ $dv->typemaison->nom }}</td>
                         <td class="align-middle">{{ $dv->typefinition->nom }}</td>
-                        <td class="align-right">{{ number_format($dv->vue_devis_paiement->final,2, ',',' ') }}</td>  
-                        <td class="align-right">{{ number_format($dv->vue_devis_paiement->paiementEffectue,2, ',',' ') }}</td> 
+                        <td class="align-middle" style="text-align: right">{{ number_format($dv->vue_devis_paiement->final,2, ',',' ') }}</td>  
+                        <td class="align-middle" style="text-align: right">{{ number_format($dv->vue_devis_paiement->paiementEffectue,2, ',',' ') }}</td> 
                         @if ($dv->vue_devis_paiement->pourcentage < 50)
-                            <td class="align-right" style="color: red">{{ number_format($dv->vue_devis_paiement->pourcentage,2, ',',' ') }} %</td> 
+                            <td class="align-middle" style="text-align: right" style="color: red">{{ number_format($dv->vue_devis_paiement->pourcentage,2, ',',' ') }} %</td> 
                         @endif 
                         @if ($dv->vue_devis_paiement->pourcentage > 50)
-                            <td class="align-right" style="color: green">{{ number_format($dv->vue_devis_paiement->pourcentage,2, ',',' ') }} %</td> 
+                            <td class="align-middle" style="text-align: right" style="color: green">{{ number_format($dv->vue_devis_paiement->pourcentage,2, ',',' ') }} %</td> 
                         @endif 
                         <td class="align-middle">
                             <div class="btn-group" role="group" aria-label="Basic example">
