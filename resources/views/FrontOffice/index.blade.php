@@ -216,7 +216,7 @@
 
 									{{-- <a href="" class="menu-img img mb-4" style="background-image: url(https://evalbtp-production.up.railway.app/clients_assets/images/btp3.jpg);"></a> --}}
 									<div class="text">
-										<h3><a href="">{{ $typemaison->nom }}  - {{ $loop->iteration }}</a></h3>
+										<h3><a href="">{{ $typemaison->nom }}</a></h3>
 										<p>{{ $typemaison->description }}</p>
 										<p class="price">
 											<span class="ion-md-calendar icon"></span>
